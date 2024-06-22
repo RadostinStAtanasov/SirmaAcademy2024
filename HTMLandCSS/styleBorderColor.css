@@ -1,0 +1,24 @@
+.a {
+    border-style: dashed;
+    border-color: papayawhip;
+}
+.b {
+    border-style: dotted;
+    border-color: plum;
+}
+.c {
+    border-style: groove;
+    border-color: palegreen;
+}
+.d {
+    border-style: solid;
+    border-color: teal;
+}
+.e {
+    border-style: solid;
+    border-color: turquoise;
+}
+.f {
+    border-style: ridge;
+    border-color: chartreuse;
+}

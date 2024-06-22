@@ -1,0 +1,19 @@
+h1 {
+    font-weight: 900;
+    font-style: normal;
+}
+
+p {
+    font-weight: 900;
+    font-style: italic;
+}
+
+span {
+    font-size: 900;
+    font-style: oblique;
+}
+
+div {
+    font-style: unset;
+    font-size: 900;
+}

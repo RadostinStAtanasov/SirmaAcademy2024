@@ -1,0 +1,23 @@
+.example1 {
+    border: 2px dashed black;
+    background: url(pexels-photo-546819.jpeg);
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+
+
+.example2 {
+    border: 2px dotted black;
+    background: url(pexels-photo-546819.jpeg);
+    background-size: 300px 100px;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    color: red;
+}
+
+p {
+    color: red;
+}

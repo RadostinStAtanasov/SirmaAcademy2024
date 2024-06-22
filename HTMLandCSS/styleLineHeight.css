@@ -1,0 +1,15 @@
+.a {
+    line-height: 1.6;
+}
+
+.b {
+    line-height: 80%;
+}
+
+.c {
+    line-height: 200%;
+}
+
+.d {
+    line-height: normal;
+}
