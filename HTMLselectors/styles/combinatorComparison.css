@@ -1,0 +1,6 @@
+div p {
+   /* color: green; */
+}
+body > div > p {
+    color: red;
+}

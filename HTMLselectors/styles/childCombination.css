@@ -1,0 +1,4 @@
+.parent > p {
+    font-style: italic;
+    color: tomato;
+}

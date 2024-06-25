@@ -1,0 +1,7 @@
+.box-model {
+    margin: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
+    border: 2px dashed tomato;
+    border-radius: 25px;
+    text-align: center;
+}

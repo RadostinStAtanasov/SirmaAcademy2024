@@ -1,0 +1,6 @@
+input[type="text"] {
+    border-color: red;
+}
+input[type="submit"] {
+    border-color: blue;
+}

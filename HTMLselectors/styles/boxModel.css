@@ -1,0 +1,6 @@
+.box {
+    /* margin, border, padding, and content area */
+    margin: 110px 110px 110px 110px;
+    border: 2px dashed tomato;
+    padding: 20px;
+}

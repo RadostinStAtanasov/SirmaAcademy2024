@@ -1,0 +1,13 @@
+h1 {
+    color: blueviolet;
+}
+
+p {
+    color: aqua;
+    font-weight: bolder;
+}
+
+div {
+    color: yellow;
+    font-weight: lighter;
+}
