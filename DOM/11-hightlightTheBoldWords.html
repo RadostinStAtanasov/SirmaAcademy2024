@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p onMouseOver="highlight()" onMouseOut="return_normal()">
+        <strong>We</strong> have just started <strong>this</strong> section for the users (beginner to intermediate) <strong>who</strong> want to work with <strong>various</strong> 
+        JavaScript <strong>problems</strong> and
+        write scripts online to <strong>test</strong> their
+        JavaScript <strong>skill</strong>.
+    </p>
+    <script>
+
+        var getStrongs;
+
+        window.onload = getBold_items();
+
+        function getBold_items() {
+            getStrongs = document.getElementsByTagName('strong');
+        }
+
+        function highlight() {
+
+            for (let i = 0; i < getStrongs.length; i++) {
+                getStrongs[i].style.color = "red";
+            }
+        }
+
+        function return_normal()
+        {
+            for (var i=0; i<getStrongs.length; i++) 
+            {
+                getStrongs[i].style.color = "blue";
+            }
+        }
+
+        console.log(getStrongs);
+    </script>
+</body>
+</html>
