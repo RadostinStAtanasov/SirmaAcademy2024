@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <p>Input radius value and get the volume of a sphere</p>
+        <label for="">Radius</label> <br>
+        <input type="text" value="" name="radius" placeholder="Radius"> <br>
+        <label for="">Volume</label> <br>
+        <input id="result" type="text" value="" name="volume" placeholder="0.0000" value="volume"> <br>
+        <button onclick="calculateVolume(event)">Calculate</button>
+    </form>
+    <script>
+        function calculateVolume(event) {
+            event.preventDefault();
+            const radius = document.querySelector('input[name=radius]');
+            const result = document.getElementById('result');
+            let radiusIn = Math.pow(Number(radius.value), 3);
+            let volumeIn = (4/3) * Math.PI
+            let volume = volumeIn * radiusIn;
+            result.value = volume;
+             
+        }
+    </script>
+</body>
+</html>
