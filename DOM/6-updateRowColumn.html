@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Change the content of a cell</title>
+</head>
+
+<body>
+    <table id="myTable" border="1">
+        
+            <tr>
+                <td>Row1 cell1</td>
+                <td>Row1 cell2</td>
+            </tr>
+            <tr>
+                <td>Row2 cell1</td>
+                <td>Row2 cell2</td>
+            </tr>
+            <tr>
+                <td>Row3 cell1</td>
+                <td>Row3 cell2</td>
+            </tr>
+        
+    </table>
+    <form>
+        Row: <input type="text" name="row" value="0" > <br>
+        Cell: <input type="text" name="column" value="0"> <br>
+        Text for row and column: <input type="text" name="columnText" placeholder="new content"> <br>
+        <input type="button" onclick="changeContent()" value="Change content">
+    </form>
+
+    <script>
+        function changeContent() {
+            const table = document.getElementById("myTable");
+            //const selectTbody = document.getElementsByTagName("tbody");
+            const inputRow = document.querySelector('input[name=row]');
+            const columnNumber = document.querySelector('input[name=column]');
+            const row = table.querySelector(`tr:nth-of-type(${inputRow.value})`);
+            const cell = row.querySelector(`td:nth-of-type(${columnNumber.value})`);
+
+            const text = document.querySelector('input[name=columnText]');
+
+            cell.textContent = text.value;
+            
+            console.log(cell);
+            console.log(text.value);
+        }
+    </script>
+</body>
+
+</html>

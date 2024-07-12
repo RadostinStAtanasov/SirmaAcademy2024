@@ -8,24 +8,25 @@
 
 <body>
     <table id="sampleTable" border="1">
-        <tr>
-            <td>Row1 cell1</td>
-            <td>Row1 cell2</td>
-        </tr>
-        <tr>
-            <td>Row2 cell1</td>
-            <td>Row2 cell2</td>
-        </tr>
+        <tbody>
+            <tr>
+                <td>Row1 cell1</td>
+                <td>Row1 cell2</td>
+            </tr>
+            <tr>
+                <td>Row2 cell1</td>
+                <td>Row2 cell2</td>
+            </tr>
+        </tbody>
     </table>
     <br>
     <input type="button" onclick="insertRow()" value="Insert row">
     <script src="script5.js"></script>
     <script>
         function insertRow() {
-            const tableElemenmt = document.getElementById('sampleTable');
+            const tableElemenmt = document.querySelector('#sampleTable > tbody');
 
-            const rowCount = tableElemenmt.querySelectorAll('tr').length;
-
+            const rowCount = tableElemenmt.children.length;
 
             const firstTdElement = document.createElement('td');
             firstTdElement.textContent = `Row${rowCount + 1} cell1`;
