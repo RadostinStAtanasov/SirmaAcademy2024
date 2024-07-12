@@ -38,13 +38,10 @@
             const columnNumber = document.querySelector('input[name=column]');
             const row = table.querySelector(`tr:nth-of-type(${inputRow.value})`);
             const cell = row.querySelector(`td:nth-of-type(${columnNumber.value})`);
-
             const text = document.querySelector('input[name=columnText]');
 
             cell.textContent = text.value;
-            
             console.log(cell);
-            console.log(text.value);
         }
     </script>
 </body>
